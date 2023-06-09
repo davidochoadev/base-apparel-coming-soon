@@ -2,20 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <meta name="description" content="This is an Article preview component" />
+  <!-- meta description is a brief summary of the content of a web page that is displayed in search results. -->
+  <meta name="keywords" content="Frontend Mentor, Article preview component, davidochoa.dev" />
+  <!-- is a list of relevant keywords for a specific web  page. However, is not used anymore due to abuse and spamming -->
+  <!-- The og:title is used to specify the title of a web page when it is shared on social media platforms. -->
+  <meta property="og:title" content="Article preview component" />
+  <!-- The og:description is used to specify the description of a web page when it is shared on social media platforms.-->
+  <meta property="og:description" content="Article preview component solution by davidochoadev" />
+  <!-- Linking to the stylesheet page -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- This tag is linking the favicon on the browser tab of the page -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- Link provided by googlefonts to get custom font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+   <!-- This is the title of the page -->
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
+  <header class="header__container">
+    <img src="./assets/images/logo.svg" alt="Base Apparel" class="header__logo">
+  </header>
+  <main>
+    <picture>
+      <img src="./assets/images/hero-mobile.jpg" alt="Base Apparel model, we're coming soon">
+      <source srcset="./assets/images/hero-desktop.jpg" media="(orientation: portrait)">
+    </picture>
+  </main>
   We're coming soon
 
   Hello fellow shoppers! We're currently building our new fashion store. 

@@ -1,0 +1,9 @@
+/*
+   HEADER STYLESHEET
+*/
+.header__container {
+   padding: 1.5rem;
+}
+.header__logo {
+   width: 7em;
+}
