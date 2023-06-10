@@ -206,7 +206,6 @@
         }
        .error__message__container {
           order: 3;
-          flex-grow: 1;
        }
        .error__message {
           padding-left: 1rem;

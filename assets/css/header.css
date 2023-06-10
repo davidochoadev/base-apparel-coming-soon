@@ -17,5 +17,9 @@
       top: 0;
       left: 0;
       background-color: transparent;
+      padding: 3rem 8rem;
+   }
+   .header__logo {
+      width: 10em;
    }
 }
