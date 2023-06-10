@@ -21,7 +21,50 @@
    box-shadow: 0 0 10px var(--desaturated-red);
    outline-offset: 1px;
 }
-.form__btn {
+/*
+-- SUBMITTED RULE FOR INPUT
+*/
+.submitted {
+   border: 1px solid var(--desaturated-red);
+ }
+ 
+ .submitted::placeholder {
+   color: var(--desaturated-red);
+   letter-spacing: 0.07em;
+   font-weight: light;
+ }
+ 
+ .submitted:focus {
+   outline: 1px solid var(--desaturated-red);
+   box-shadow: 0 0 10px var(--desaturated-red);
+   outline-offset: 1px;
+ }
+ 
+ /*
+ -- NOT SUBMITTED RULE FOR INPUT
+ */
+ .not-submitted {
+   border: 1px solid var(--soft-red);
+ }
+ 
+ .not-submitted::placeholder {
+   transition: 0.7s ease;
+   color: var(--soft-red);
+   letter-spacing: 0.07em;
+   font-weight: light;
+ }
+ 
+ .not-submitted:focus {
+   border: none;
+   outline: 1px solid var(--soft-red);
+   box-shadow: 0 0 10px var(--soft-red);
+   outline-offset: 1px;
+ }
+ 
+ /*
+ -- SUBMIT BUTTON STYLING
+ */
+ .form__btn {
    position: absolute;
    top: 0;
    right: 0;
@@ -35,6 +78,137 @@
    cursor: pointer;
 }
 .form__btn:hover {
-   transform: scale(1.1)
-
+   transform: scale(1.1);
 }
+ 
+ /*
+ -- NOT SUBMITTED BUTTON STYLING
+ */
+ 
+ .btn__not-submitted {
+   background-color: var(--light-red);
+ }
+ .btn__not-submitted:hover {
+   background-color: var(--light-red);
+   color: var(--white);
+ }
+ 
+ /*
+ -- ALERT STYLING
+ */
+ .error__message {
+    font-style: italic;
+    color: var(--light-red);
+    text-align: left;
+ }
+ .visually-hidden {
+   margin-top: -0.3em;
+   opacity: 0;
+   height:5px;
+ }
+    /* 
+    -- ALERT IS SHOWED
+    */
+    .is-showed {
+       z-index: 0;
+       transition: 0.7s ease;
+       font-style: italic;
+       margin-top: 0.4em;
+       margin-bottom: 0.4em;
+       font-size: 0.9em;
+       color: var(--soft-red);
+    }
+    .is-showed {
+       -webkit-animation: is-showed 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+       animation: is-showed 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    @-webkit-keyframes is-showed {
+    0% {
+       -webkit-transform: translateY(-10px);
+       transform: translateY(-10px);
+       opacity: 0;
+    }
+    100% {
+       -webkit-transform: translateY(0);
+       transform: translateY(0);
+       opacity: 1;
+    }
+    }
+    @keyframes is-showed {
+    0% {
+       -webkit-transform: translateY(-10px);
+       transform: translateY(-10px);
+       opacity: 0;
+    }
+    100% {
+       -webkit-transform: translateY(0);
+       transform: translateY(0);
+       opacity: 1;
+    }
+    }
+    /* 
+    -- ALERT IS NOT SHOWED
+    */
+    .not-showed {
+       z-index: 0;
+       transition: 0.7s ease;
+       margin-top: -0.3em;
+       margin-bottom: -0.3em;
+       font-size: 0.9rem;
+       font-style: italic;
+       color: var(--light-red);
+    }
+ 
+    .not-showed {
+       -webkit-animation: not-showed 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+       animation: not-showed 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+    }
+ 
+    @-webkit-keyframes not-showed {
+       0% {
+          -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+          opacity: 0;
+       }
+       100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+       }
+    }
+    @keyframes not-showed {
+       0% {
+          -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+          opacity: 0;
+       }
+       100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+       }
+    }
+ 
+ 
+    @media (min-width: 40rem) {
+       .form__container {
+          flex-direction: row;
+          gap: 1rem;
+          width: 100%;
+          flex-wrap: wrap;
+       }
+       .input__email {
+          width: 64%;
+       }
+       .submit__button {
+          width: 30%;
+          order: 2;
+        }
+       .error__message__container {
+          order: 3;
+          flex-grow: 1;
+       }
+       .error__message {
+          padding-left: 1rem;
+       }
+    }
