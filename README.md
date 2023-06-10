@@ -23,11 +23,11 @@ Users should be able to:
 
 ### 🔗 Links
 <div align="left">
-  <a href="" target="_blank">
+  <a href="https://davidochoadev.github.io/base-apparel-coming-soon/" target="_blank">
     <img src="https://img.shields.io/badge/Solution%20Mentor-%20SOLUTION%20URL-f8f9f8?style=for-the-badge&logo=Frontend-Mentor&logoColor=white&labelColor=3f54a3" alt="Frontend-Mentor Solution">
   </a>
   <br>
-  <a href="" target="_blank">
+  <a href="https://github.com/davidochoadev/base-apparel-coming-soon" target="_blank">
     <img src="https://img.shields.io/badge/GitHub%20Pages-Live%20Site%20URL-fff?style=for-the-badge&logo=github&logoColor=white&labelColor=100000" alt="Github">
   </a>
 </div>
