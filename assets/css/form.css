@@ -15,6 +15,12 @@
    font-weight: 400;
    color: var(--desaturated-red);
 }
+.form__input:focus {
+   border: none;
+   outline: 1px solid var(--desaturated-red);
+   box-shadow: 0 0 10px var(--desaturated-red);
+   outline-offset: 1px;
+}
 .form__btn {
    position: absolute;
    top: 0;
