@@ -27,18 +27,25 @@
   <header class="header__container">
     <img src="./assets/images/logo.svg" alt="Base Apparel" class="header__logo">
   </header>
-  <main>
-    <picture>
+  <main class="main__container">
+    <picture class="picture__container">
       <img src="./assets/images/hero-mobile.jpg" alt="Base Apparel model, we're coming soon">
       <source srcset="./assets/images/hero-desktop.jpg" media="(orientation: portrait)">
     </picture>
+    <div class="main-content__container">
+      <h1 class="title">We're <span aria-hidden="true">coming soon</span></h1>
+      <p class="description">
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form class="form__container">
+        <input type="text" class="form__input" placeholder="Email Address">
+        <button class="form__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"/></svg>
+        </button>
+      </form>
+    </div>
   </main>
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
   
   <footer class="author__section">
     <a href="https://davidochoa.fly.dev" target="_blank" class="author__anchor">davidochoa.dev</a>
