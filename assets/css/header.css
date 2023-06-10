@@ -7,3 +7,15 @@
 .header__logo {
    width: 7em;
 }
+
+@media (min-width: 600px) {
+   .header__container {
+      width: 100%;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+   }
+}

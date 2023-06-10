@@ -42,3 +42,10 @@ body {
    font-weight: 400;
    z-index:0;
 }
+
+@media (min-width: 600px) {
+   body {
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+   }
+}
